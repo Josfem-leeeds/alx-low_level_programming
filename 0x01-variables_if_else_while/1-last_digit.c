@@ -9,7 +9,7 @@
  *
  * Return: Always 0.
  */
-int main(void);
+int main(void)
 {
 	int n;
 
@@ -22,7 +22,7 @@ int main(void);
 	}
 	else if (n < 4)
 	{
-		(printf("Last digit of %d and is 0\n", n);
+		printf("Last digit of %d and is 0\n", n);
 	}
 	else if (n < 6 && n != 0)
 	{
