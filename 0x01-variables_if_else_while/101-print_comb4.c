@@ -19,7 +19,7 @@ int main(void)
 					putchar(num);
 					putchar(numz);
 					putchar(nums);
-					if (num != 56 || numz != 57 || nums != 57)
+					if (num != 55 || numz != 56 || nums != 57)
 					{
 						putchar(44);
 						putchar(32);
