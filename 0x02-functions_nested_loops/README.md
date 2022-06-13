@@ -1,1 +1,1 @@
-0-putchar: This prints _putchar on the string
+0-putchar: this is a readme for nested functions and loop

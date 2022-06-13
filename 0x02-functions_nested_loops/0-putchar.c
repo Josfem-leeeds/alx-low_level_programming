@@ -1,11 +1,11 @@
 #include <main.h>
-
-/** main - prints the word putchar
- *
+/**
+ * main - prints the word putchar
  * Return: always 0
  */
 int main(void)
 {
+/* this calls the function to be printed */
 	_putchar("_");
 	_putchar("p");
 	_putchar("u");
