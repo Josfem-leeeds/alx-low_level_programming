@@ -1,16 +1,26 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print-alphabet writes all the lower character alphabet
- * Return: it returns 0 meaning successful.
+ * main - Entry point
+ *
+ * Description: the program's description
+ *
+ * Return: Always 0 (Success)
  */
 void print_alphabet(void)
 {
-	char letters;
+/* This is the body of the function */
+	char l;
 
-	for (letters = 'a'; letters <= 'z'; letters++)
+	for (l = 'a'; l <= 'z'; l++)
 	{
-		putchar(letters);
+		_putchar(l);
 	}
-	putchar ('\n');
+	_putchar('\n');
 }
+/**
+ * is_positive - Check if a number is greater than 0
+ * @nb: The number to be checked
+ *
+ * Return: 1 if the number is positive. 0 otherwise
+ */
