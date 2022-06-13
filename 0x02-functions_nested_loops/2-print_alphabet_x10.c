@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * Main - This function prints lower alphabets 10 times
  *
@@ -15,8 +15,8 @@ void print_alphabet_x10(void)/* Function declaration */
 	{
 		for (l = 'a'; i <= 'z'; i++)
 		{
-		_putchar(l);
+		putchar(l);
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
