@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * Main - This function prints lower alphabets 10 times
  *
