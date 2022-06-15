@@ -5,7 +5,7 @@
 * puts2 -> puts2 function
 * @str: str parameter
 */
-void puts2(char *str)
+void puts_half(char *str)
 {
 	int len, i, x;
 
