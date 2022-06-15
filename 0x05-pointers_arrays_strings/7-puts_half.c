@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
-* puts2 -> puts2 function
+* puts_half -> puts of the string
 * @str: str parameter
 */
 void puts_half(char *str)
@@ -14,7 +14,9 @@ void puts_half(char *str)
 		x = len / 2 + 1;
 	else
 		x = len / 2;
-	for (i = x; i < x; i++)
+	for (i = x; i < len; i++)
+	{
 		_putchar(str[i]);
+	}
 	_putchar('\n');
 }
