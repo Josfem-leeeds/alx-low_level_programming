@@ -3,7 +3,8 @@
 
 /**
  * print_array - this prints array
- * @i: counts the array size
+ * @a: the array name
+ * @n: the array size
  * Return: nothing
  */
 void print_array(int *a, int n)
