@@ -11,7 +11,7 @@ void print_alphabet_x10(void)/* Function declaration */
 
 	for (i = 0; i <= 10; i++)
 	{
-		for (l = 'a'; i <= 'z'; i++)
+		for (l = 'a'; l <= 'z'; l++)
 		{
 			_putchar(l);
 		}
