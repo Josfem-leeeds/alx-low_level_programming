@@ -19,8 +19,8 @@ int print_sign(int n)
 	}
 	else
 	{
-		return (0)
+		return (0);
 		_putchar(48);
 	}
-	_putchar("\n");
+	_putchar('\n');
 }
