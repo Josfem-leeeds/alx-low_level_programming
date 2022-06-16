@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * isalpha - the function checks for alphabet either lowercase or uppercase
+ * _isalpha - the function checks for alphabet either lowercase or uppercase
  * @c: the variable holding the alphabet to be checked
  * Return: this returns 1 for true and 0 for false
  */
