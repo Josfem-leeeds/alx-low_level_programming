@@ -5,7 +5,7 @@
  * @c: the variable holding the alphabet to be checked
  * Return: this returns 1 for true and 0 for false
  */
-int _alpha(int c)
+int _isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
 		return (1);
