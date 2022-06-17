@@ -20,6 +20,6 @@ void reverse_array(int *a, int n)
 		alt = a[y];
 		a[y] = *b;
 		*b = alt;
-		p--;
+		b--;
 	}
 }
