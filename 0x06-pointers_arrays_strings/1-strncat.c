@@ -6,10 +6,10 @@
  * @dest: parameter 1
  * @src: parametr 2
  * @n: parameter 3
- * Return: a string 
+ * Return: a string
  */
 char *_strncat(char *dest, char *src, int n)
 {
 	strncat(dest, src, n);
-	return (dest);	
+	return (dest);
 }
