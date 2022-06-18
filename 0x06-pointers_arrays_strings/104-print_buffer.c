@@ -2,53 +2,77 @@
 #include <stdio.h>
 
 /**
- * infinite_add -   a function that adds two numbers.
- * @n1: first parameter.
- * @n2: second parameter.
- * @r: third parameter.
- * @size_r: fourth parameter
- * Return: 0
+ * isPrintableASCII - determines if n is a printable ASCII char
+ * @n: integer
+ * Return: 1 if true, 0 if false
  */
-
-char *infinite_add(char *n1, char *n2, char *r, int size_r)
+int isPrintableASCII(int n)
 {
-	/* local variable declaration */
-	int i = 0, j = 0, k, l = 0, f, s, d = 0;
+	return (n >= 32 && n <= 126);
+}
 
-	while (n1[i] != '\0')
+/**
+ * printHexes - print hex values for string b in formatted form
+ * @b: string to print
+ * @start: starting position
+ * @end: ending position
+ */
+void printHexes(char *b, int start, int end)
+{
+	int i = 0;
+
+	while (i < 10)
+	{
+		if (i < end)
+			printf("%02x", *(b + start + i));
+		else
+			printf("  ");
+		if (i % 2)
+			printf(" ");
 		i++;
-	while (n2[j] != '\0')
-		j++;
-	if (i > j)
-		l = i;
-	else
-		l = j;
-	if (l + 1 > size_r)
-		return (0);
-	r[l] = '\0';
-	for (k = l - 1 ; k >= 0 ; k--)
-	{
-		i--;
-		j--;
-		if (i >= 0)
-			f = n1[i] - '0';
-		else
-			f = 0;
-		if (j >= 0)
-			s = n2[j] - '0';
-		else
-			s = 0;
-		r[k] = (f + s + d) % 10 + '0';
-		d = (f + s + d) / 10;
 	}
-	if (d == 1)
+}
+
+/**
+ * printASCII - print ascii values for string b,
+ * formatted to replace nonprintable chars with '.'
+ * @b: string to print
+ * @start: starting position
+ * @end: ending position
+ */
+void printASCII(char *b, int start, int end)
+{
+	int ch, i = 0;
+
+	while (i < end)
 	{
-		r[l + 1] = '\0';
-		if (l + 2 > size_r)
-			return (0);
-		while (l-- >= 0)
-			r[l + 1] = r[l];
-		r[0] = d + '0';
+		ch = *(b + i + start);
+		if (!isPrintableASCII(ch))
+			ch = 46;
+		printf("%c", ch);
+		i++;
 	}
-	return (r);
+}
+
+/**
+ * print_buffer - prints a buffer
+ * @b: string
+ * @size: size of buffer
+ */
+void print_buffer(char *b, int size)
+{
+	int start, end;
+
+	if (size > 0)
+	{
+		for (start = 0; start < size; start += 10)
+		{
+			end = (size - start < 10) ? size - start : 10;
+			printf("%08x: ", start);
+			printHexes(b, start, end);
+			printASCII(b, start, end);
+			printf("\n");
+		}
+	} else
+		printf("\n");
 }
