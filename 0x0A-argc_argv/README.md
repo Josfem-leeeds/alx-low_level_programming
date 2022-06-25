@@ -1,0 +1,1 @@
+This is indicates how arguments are passed to the main function. there are at least two arguments to main which are argc and argv namely argument count and arguments vector. the first of this is a count of the arguments supplied to the program and the second is an array of pointers to the strings which are those arguments.
