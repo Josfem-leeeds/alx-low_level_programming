@@ -6,7 +6,7 @@
  * @c: the second parameter
  * Return: returns 0
  */
-char *create_array(unisigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	char *str;
 	unsigned int i;
