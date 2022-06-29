@@ -8,7 +8,7 @@
  * @height: the second integer parameter
  * Return: returns a pointer to 2D array of integers
  */
-int *alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int size1, size2, size3, size4;
 	int **ret;
@@ -21,7 +21,7 @@ int *alloc_grid(int width, int height)
 		free(ret);
 		return (NULL);
 	}
-	for (size1 = 0, size1 < height; size1++)
+	for (size1 = 0; size1 < height; size1++)
 	{
 		ret[size1] = malloc(width * sizeof(int));
 		if (ret[size1] == NULL)
