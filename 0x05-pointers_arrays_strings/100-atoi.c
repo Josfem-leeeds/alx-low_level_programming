@@ -23,7 +23,7 @@ int _atoi(char *s)
 		{
 			found = 1;
 			val = (val * 10) + (s[count] - '0');
-			c++;
+			count++;
 		}
 
 		if (found == 1)
