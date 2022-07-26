@@ -1,12 +1,12 @@
 #include "main.h"
+#include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <unistd.h>
 #include <stdlib.h>
 
 /**
- * read_textfile - this reads a text file and prints it to a standard POSIX API output
+ * read_textfile - this reads a text file and prints it to a standard POSIX
  * @filename: the name of the file to read
  * @letters: the number of letters it should read and print
  *
